@@ -16,6 +16,7 @@ This project is a simple C++ application for user login and signup, utilizing My
 - MySQL C++ Connector
 - C++17 or later
 - Windows (the current implementation uses Windows-specific headers)
+- The encrypt function processes each character of the original password, applying a shift according to whether the character is a letter or digit. The resulting encrypted string is formed by appending each shifted character from the original password. Because the encryption process involves only character shifting without adding or removing any characters, the length of the encrypted password string remains identical to that of the original password string.
 
 ## Getting Started
 
